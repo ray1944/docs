@@ -17,7 +17,7 @@ IReactorTCP.listenTCP and IReactor*.listen* APIs for the lower level APIs that e
 ```
 
 # Prtocols
-```
+```python
 from twisted.internet.protocol import Protocol
 class Echo(Protocol):
     def dataReceived(self, data):
@@ -25,7 +25,7 @@ class Echo(Protocol):
 ```
 above is the simplest protocols. it simply writes back whatever is written to it.
 
-```
+```python
 from twisted.internet.protocol import Protocol
 class QOTD(Protocol):
     def connectionMade(self):
